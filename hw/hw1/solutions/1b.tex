@@ -1,8 +1,10 @@
-We need to show that if $\F_j$ is a $\sigmaField$ $\forall j \in J$,
-then $\bigcap_{j\in J} \F_j$ is a $\sigmaField$.
+Let $\F_i = \bc{A_i, A_i^c, \emptyset, \Omega}$ for $i=1,2$.  Then, 
 
-We show this by the checking if three axioms of $\sigmaFields$ are met. 
+\begin{align*}
+  &\F_1 \cup \F_2 = \bc{A_1, A_2, A_1^c, A_2^c, \emptyset, \Omega} \\
+  \Rightarrow & A_1 \cup A_2 \in \F_1 \cup \F_2 \\
+\end{align*}
 
-$\Omega$
+However, $(A_1 \cap A_2)^c = A_1^c \cap A_2^c \notin \F_1 \cup \F_2$.
 
-
+$\therefore$ a union of $\sigmaFields$ is not necessarily a $\sigmaField$.

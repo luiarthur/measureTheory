@@ -1,0 +1,29 @@
+We need to show that the three axioms for a field are met.
+
+1. Show $\Omega \in \F$. This is given.
+
+2. Show $A \in \F \Rightarrow A^c \in \F$. Using the fact that
+$ A,B \in \F \Rightarrow A\cap B^c \in \F $,
+let $B = \Omega$ (so $B \in \F$).
+Then for some $A \in \F$, 
+\begin{align*}
+  A,B \in \F &\Rightarrow A,\Omega \in \F \\
+  &\Rightarrow A^c \cap \Omega \in \F \\
+  &\Rightarrow A^c \in \F \\
+\end{align*}
+
+Since $\Omega \in \F$, $~\therefore~ A \in \F \Rightarrow A^c \in \F$.
+
+3. Show $A, B \in \F \Rightarrow A \cup B \in \F$.
+\begin{align*}
+  A \in \F &\Rightarrow A \in \F \text{ (from axiom 2)}\\
+  \text{Consequently,}  \\
+  A, B \in \F &\Rightarrow A^c, B \in \F \\
+  &\Rightarrow A^c \cap B^c \in \F \\
+  &\Rightarrow \p{A^c \cap B^c}^c \in \F \text{ (from axiom 2)}\\
+  &\Rightarrow \p{A \cup B} \in \F \\
+  \\
+  \therefore ~~ A,B \in \F \Rightarrow \p{A \cup B} \in \F \\
+\end{align*}
+
+

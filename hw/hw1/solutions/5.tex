@@ -1,0 +1,32 @@
+A probability space is comprised of a sample space $\Omega$, a $\sigmaField$, and a
+set function $P$.
+
+Here, $\Omega$ is given and $\F$ is the power set, so it is a $\sigmaField$. What
+remains is to show that the $P$  is a proper probability measure on $\F$.
+
+There are 3 parts:
+
+1. Show $P(\Omega) = 1$.
+
+\begin{align*}
+  P(\Omega) = \sum_{n:\omega_n \in \Omega} p_n = \sum_{n=1}^\infty p_n = 1\\
+\end{align*}
+
+2. Show that for all $A\in \F$ $0\le P(A)\le1$.
+\begin{align*}
+  p_n \ge 0 \text{ and } \sum_{n=1}^\infty p_n = 1 ~~\forall n \in \mathbb{N} \\
+  \therefore ~~ 0 \le P(A) \le 1, ~~\forall A \in \F\\
+\end{align*}
+
+3. Show that $P(\bigcup_{i=1}^\infty A_i) = \sum_{i=1}^\infty P(A_i), ~\forall A_i \cap A_j = \emptyset, i\ne j$.
+
+For $A_i \cap A_j = \emptyset, i\ne j$.
+\begin{align*}
+  P\p{\bigcup_{i=1}^\infty A_i}&= \sum_{n:\omega_n \in \cup_{i=1}^\infty A_i} p_n \\
+                               &= \sum_{i=1}^\infty~\sum_{n: \omega_n\in A_i} p_n \\
+                               &= \sum_{n: \omega_n\in A_1} p_n + \sum_{n: \omega_n\in A_2} p_n + ...\\
+                               &= P(A_1) + P(A_2) + ... \\
+                               &= \sum_{i=1}^\infty P(A_i) \\
+\end{align*}
+
+Therefore, $(\Omega, \F, P)$ is a probability space.
