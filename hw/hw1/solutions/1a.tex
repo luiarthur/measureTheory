@@ -1,0 +1,30 @@
+\newcommand{\capFj}{\bigcap_{j\in J} \F_j}
+
+We need to show that if $\F_j$ is a $\sigmaField$ $\forall j \in J$,
+then $\capFj$ is a $\sigmaField$.
+
+We show this by the checking if three axioms of $\sigmaFields$ are met. 
+
+1. Show $\Omega\in\capFj$ 
+
+$$
+\Omega \in \F_j ~\forall j\in J~ \Rightarrow \Omega \in \capFj
+$$
+
+2. Show $A \in \F \Rightarrow A^C \in \F$ 
+
+\begin{align*}
+A \in \capFj &\Rightarrow A \in \F_j ~~\forall j\in J \\
+&\Rightarrow A^C \in \F_j ~~\forall j\in J \\
+&\Rightarrow A^C \in \capFj \\
+\end{align*}
+
+3. Show $A_1, A_2, ... \in \F \Rightarrow \bigcup_{i=1}^\infty A_i \in \F$
+
+\begin{align*}
+A_1, A_2, ... \in \capFj &\Rightarrow A_1, A_2, ... \in \F_j ~~\forall j\in J \\
+&\Rightarrow \bigcup_{i=1}^\infty A_i \in \F_j ~~\forall j \in J \\
+&\Rightarrow \bigcup_{i=1}^\infty A_i \in \capFj
+\end{align*}
+
+$\therefore$ $~~\capFj$ is a $\sigmaField$.

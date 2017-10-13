@@ -1,0 +1,12 @@
+*.pdf
+*.log
+*.aux
+*.nav
+*.out
+*.snm
+*.toc
+*.blg
+*.bbl
+*.tex
+
+!solutions/*
