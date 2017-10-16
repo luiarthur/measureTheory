@@ -1,5 +1,5 @@
 ---
-title: "HW1"
+title: "AMS 261 - HW1"
 author: Arthur Lui
 date: "\\today"
 geometry: margin=1in
