@@ -1,5 +1,5 @@
 ---
-title: "Title"
+title: "HW1"
 author: Arthur Lui
 date: "\\today"
 geometry: margin=1in
